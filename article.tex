@@ -1,0 +1,21 @@
+\documentclass[a4paper]{amsart}
+
+\input{preamble}
+
+% Use to only compile one part of the document - don't commit change here
+%\includeonly{sections/01-introduction}
+
+\begin{document}
+
+% title page, abstract, table of contents
+\include{frontmatter}
+
+% main content
+\include{content}
+
+% references
+\nocite{*} % This is needed so bibtex doesn't complain about no citations
+\bibliography{references}{}
+\bibliographystyle{amsplain} % or amsalpha
+
+\end{document}
